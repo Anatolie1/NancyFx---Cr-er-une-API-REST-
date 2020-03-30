@@ -25,6 +25,18 @@ namespace EcoConception
         static void Main(string[] args)
         {
             var p = new Program();
+            
+            List<Person> users = new List<Person>() 
+            {
+                new Person() { Id = 1, Name = "Vasea", Password = "2345"},
+                new Person() { Id = 2, Name = "Iura", Password = "2345"},
+                new Person() { Id = 3, Name = "Gulea", Password = "2345"},
+                new Person() { Id = 4, Name = "Hui", Password = "2345"},
+                new Person() { Id = 5, Name = "Vitea", Password = "2345"},
+                new Person() { Id = 6, Name = "Coren", Password = "2345"},
+            };
+            
+            SimpleModule.people.AddRange(users);
             p.Start();
         }
     }
